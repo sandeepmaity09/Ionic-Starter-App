@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AlertPage } from '../alert/alert';
+import { ActionsheetPage } from '../actionsheet/actionsheet';
 
 @Component({
     selector: 'page-test',
@@ -11,17 +13,18 @@ export class TestPage {
 
     }
 
-    // items: Array<{ title: string, note: string, icons: string }>
-
-    items = [
-        "Apple",
-        "Banana",
-        "Cake",
-        "Donut",
-        "Egg",
-        "Fruits",
-        "Guava",
-        "Hen",
-        "Ink"
+    pages: any[] = [
+        {
+            title: "Aleat Box",
+            component: AlertPage
+        },
+        {
+            title: "Action Sheet",
+            component: ActionsheetPage
+        }
     ]
+
+    showPage(p) {
+        this.navCtrl.push(p.component);
+    }
 }

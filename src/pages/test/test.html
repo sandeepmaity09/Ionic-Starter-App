@@ -1,8 +1,27 @@
+<!-- <ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Pages</ion-title>
+        </ion-toolbar>
+    </ion-header>
+</ion-menu> -->
+
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Ionic UI's Component Home Page
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
 <ion-content>
-    <h2>Welcome to Listing</h2>
-    <ul>
-        <li *ngFor="let p of items">
-            {{p}}
+    <h2>Components Listing</h2>
+    <!-- <ul>
+        <li *ngFor="let p of pages">
+            {{p.title}}
         </li>
-    </ul>
+    </ul> -->
+    <ion-list padding>
+        <button ion-button block color="dark" (click)="showPage(p)" *ngFor="let p of pages">{{p.title}}</button>
+    </ion-list>
 </ion-content>
