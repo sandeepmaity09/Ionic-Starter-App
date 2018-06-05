@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertPage } from '../alert/alert';
 import { ActionsheetPage } from '../actionsheet/actionsheet';
+import { PromptAlertPage } from '../promptalert/promptalert';
 
 @Component({
     selector: 'page-test',
@@ -21,6 +22,10 @@ export class TestPage {
         {
             title: "Action Sheet",
             component: ActionsheetPage
+        },
+        {
+            title: "Prompt Alert",
+            component: PromptAlertPage
         }
     ]
 

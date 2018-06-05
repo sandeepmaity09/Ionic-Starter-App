@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { TestPage } from '../pages/test/test';
 import { AlertPage } from '../pages/alert/alert';
 import { ActionsheetPage } from '../pages/actionsheet/actionsheet';
+import { PromptAlertPage } from '../pages/promptalert/promptalert';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ActionsheetPage } from '../pages/actionsheet/actionsheet';
     HomePage,
     TestPage,
     AlertPage,
-    ActionsheetPage
+    ActionsheetPage,
+    PromptAlertPage
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { ActionsheetPage } from '../pages/actionsheet/actionsheet';
     TestPage,
     AlertPage,
     ActionsheetPage,
+    PromptAlertPage
   ],
   providers: [
     StatusBar,
